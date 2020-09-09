@@ -1,82 +1,8 @@
 Host abcd
     Hostname abcd-efgh.ijkl
-    User username.tank
-#    IdentitiesOnly yes
-#    IdentityFile ~/.ssh/id_rsa
+    User username
 
 Host abcd
     Hostname abcd-efgh.ijkl
-    User username.tank
-#    IdentitiesOnly yes
-#    IdentityFile ~/.ssh/id_rsa
-
-Host abcd
-    Hostname abcd-efgh.ijkl
-    User username.tank
-#    IdentitiesOnly yes
-#    IdentityFile ~/.ssh/id_rsa
-
-Host abcd
-    Hostname abcd-efgh.ijkl
-    User username.tank
-#    IdentitiesOnly yes
-#    IdentityFile ~/.ssh/id_rsa
-
-Host abcd
-    Hostname abcd-efgh.ijkl
-    User htank
-
-Host abcd
-    Hostname abcd-efgh.ijkl
-    User root 
-
-Host abcd
-    Hostname abcd-efgh.ijkl
-    User usernametank
-
-Host -pitabcd
-    Hostname abcd-efgh.ijkl
-    User usernametank 
-
-Host -pitdcs02abcd
-    Hostname abcd-efgh.ijkl
-    User testpi1
-
-Host -pitdcs01abcd
-    Hostname abcd-efgh.ijkl
-    User testpi1
-
-Host abcd
-    Hostname abcd-efgh.ijkl
-    User loginuser
-    ProxyCommand ssh jumphost -W %h:%p
-
-Host -ahmabcd
-    Hostname abcd-efgh.ijkl
-    User abcd
-    ProxyCommand ssh jumphost -W %h:%p
-
-Host -ahmabcd
-    Hostname abcd-efgh.ijkl
-    User root
-    ProxyCommand ssh jumphost -W %h:%p
-
-Host abcd
-    Hostname abcd-efgh.ijkl
-    User root
-    ProxyCommand ssh jumphost -W %h:%p
-
-Host -dev02abcd
-    Hostname abcd-efgh.ijkl
-    User root
-    ProxyCommand ssh jumphost -W %h:%p
-
-Host -consoleabcd
-    Hostname abcd-efgh.ijkl
-    User admin
-    ProxyCommand ssh jumphost -W %h:%p
-
-Host -dvt00abcd
-    Hostname abcd-efgh.ijkl
-    User root
+    User username
     ProxyCommand ssh jumphost -W %h:%p
