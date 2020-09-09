@@ -1,82 +1,82 @@
-Host ahmjp1
-    Hostname ahm-jumphost21.green.abcd
+Host abcd
+    Hostname abcd-efgh.ijkl
     User himanshu.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
-Host ahmjp2
-    Hostname ahm-jumphost22.green.abcd
+Host abcd
+    Hostname abcd-efgh.ijkl
     User himanshu.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
-Host ahmjp3
-    Hostname ahm-jumphost23.green.abcd
+Host abcd
+    Hostname abcd-efgh.ijkl
     User himanshu.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
-Host ahmjp4
-    Hostname ahm-jumphost24.green.abcd
+Host abcd
+    Hostname abcd-efgh.ijkl
     User himanshu.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
-Host tadev
-    Hostname ta-dev.qa.astaro.de
+Host abcd
+    Hostname abcd-efgh.ijkl
     User htank
 
-Host 3300 
-    Hostname 10.169.19.55
+Host abcd
+    Hostname abcd-efgh.ijkl
     User root 
 
-Host pitjp
-    Hostname jump00.c04.pit.els.abcd
+Host abcd
+    Hostname abcd-efgh.ijkl
     User himanshutank
 
-Host nemodev-pit
-    Hostname 10.169.16.14
+Host -pitabcd
+    Hostname abcd-efgh.ijkl
     User himanshutank 
 
-Host 3300-pitdcs02
-    Hostname debug-console-server-02.c04.pit.els.abcd
+Host -pitdcs02abcd
+    Hostname abcd-efgh.ijkl
     User testpi1
 
-Host DT1-pitdcs01
-    Hostname debug-console-server-01.c04.pit.els.abcd
+Host -pitdcs01abcd
+    Hostname abcd-efgh.ijkl
     User testpi1
 
-Host sg430rev1
-    Hostname 10.198.248.55
+Host abcd
+    Hostname abcd-efgh.ijkl
     User loginuser
-    ProxyCommand ssh ahmjp1 -W %h:%p
+    ProxyCommand ssh jumphost -W %h:%p
 
-Host xgs3100-ahm
-    Hostname 10.198.248.72
+Host -ahmabcd
+    Hostname abcd-efgh.ijkl
     User abcd
-    ProxyCommand ssh ahmjp1 -W %h:%p
+    ProxyCommand ssh jumphost -W %h:%p
 
-Host nemodev-ahm
-    Hostname 10.198.248.73
+Host -ahmabcd
+    Hostname abcd-efgh.ijkl
     User root
-    ProxyCommand ssh ahmjp1 -W %h:%p
+    ProxyCommand ssh jumphost -W %h:%p
 
-Host xgs3100evt2
-    Hostname 10.198.248.217
+Host abcd
+    Hostname abcd-efgh.ijkl
     User root
-    ProxyCommand ssh ahmjp1 -W %h:%p
+    ProxyCommand ssh jumphost -W %h:%p
 
-Host xgs3100evt2-dev02
-    Hostname 10.198.248.218
+Host -dev02abcd
+    Hostname abcd-efgh.ijkl
     User root
-    ProxyCommand ssh ahmjp1 -W %h:%p
+    ProxyCommand ssh jumphost -W %h:%p
 
-Host ahm-console
-    Hostname 10.198.248.153
+Host -consoleabcd
+    Hostname abcd-efgh.ijkl
     User admin
-    ProxyCommand ssh ahmjp1 -W %h:%p
+    ProxyCommand ssh jumphost -W %h:%p
 
-Host xgs2300-dvt00
-    Hostname 10.198.248.184
+Host -dvt00abcd
+    Hostname abcd-efgh.ijkl
     User root
-    ProxyCommand ssh ahmjp1 -W %h:%p
+    ProxyCommand ssh jumphost -W %h:%p
