@@ -1,24 +1,24 @@
 Host abcd
     Hostname abcd-efgh.ijkl
-    User himanshu.tank
+    User username.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
 Host abcd
     Hostname abcd-efgh.ijkl
-    User himanshu.tank
+    User username.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
 Host abcd
     Hostname abcd-efgh.ijkl
-    User himanshu.tank
+    User username.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
 Host abcd
     Hostname abcd-efgh.ijkl
-    User himanshu.tank
+    User username.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
@@ -32,11 +32,11 @@ Host abcd
 
 Host abcd
     Hostname abcd-efgh.ijkl
-    User himanshutank
+    User usernametank
 
 Host -pitabcd
     Hostname abcd-efgh.ijkl
-    User himanshutank 
+    User usernametank 
 
 Host -pitdcs02abcd
     Hostname abcd-efgh.ijkl
