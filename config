@@ -1,8 +1,8 @@
 Host abcd
-    Hostname abcd-efgh.ijkl
+    Hostname <IP>
     User username
 
-Host abcd
-    Hostname abcd-efgh.ijkl
+Host efgh
+    Hostname <IP>
     User username
     ProxyCommand ssh jumphost -W %h:%p
