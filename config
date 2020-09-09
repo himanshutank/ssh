@@ -1,23 +1,23 @@
 Host ahmjp1
-    Hostname ahm-jumphost21.green.sophos
+    Hostname ahm-jumphost21.green.abcd
     User himanshu.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
 Host ahmjp2
-    Hostname ahm-jumphost22.green.sophos
+    Hostname ahm-jumphost22.green.abcd
     User himanshu.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
 Host ahmjp3
-    Hostname ahm-jumphost23.green.sophos
+    Hostname ahm-jumphost23.green.abcd
     User himanshu.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
 
 Host ahmjp4
-    Hostname ahm-jumphost24.green.sophos
+    Hostname ahm-jumphost24.green.abcd
     User himanshu.tank
 #    IdentitiesOnly yes
 #    IdentityFile ~/.ssh/id_rsa
@@ -31,7 +31,7 @@ Host 3300
     User root 
 
 Host pitjp
-    Hostname jump00.c04.pit.els.sophos
+    Hostname jump00.c04.pit.els.abcd
     User himanshutank
 
 Host nemodev-pit
@@ -39,11 +39,11 @@ Host nemodev-pit
     User himanshutank 
 
 Host 3300-pitdcs02
-    Hostname debug-console-server-02.c04.pit.els.sophos
+    Hostname debug-console-server-02.c04.pit.els.abcd
     User testpi1
 
 Host DT1-pitdcs01
-    Hostname debug-console-server-01.c04.pit.els.sophos
+    Hostname debug-console-server-01.c04.pit.els.abcd
     User testpi1
 
 Host sg430rev1
@@ -53,7 +53,7 @@ Host sg430rev1
 
 Host xgs3100-ahm
     Hostname 10.198.248.72
-    User sophos
+    User abcd
     ProxyCommand ssh ahmjp1 -W %h:%p
 
 Host nemodev-ahm
