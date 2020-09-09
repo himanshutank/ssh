@@ -1,0 +1,82 @@
+Host ahmjp1
+    Hostname ahm-jumphost21.green.sophos
+    User himanshu.tank
+#    IdentitiesOnly yes
+#    IdentityFile ~/.ssh/id_rsa
+
+Host ahmjp2
+    Hostname ahm-jumphost22.green.sophos
+    User himanshu.tank
+#    IdentitiesOnly yes
+#    IdentityFile ~/.ssh/id_rsa
+
+Host ahmjp3
+    Hostname ahm-jumphost23.green.sophos
+    User himanshu.tank
+#    IdentitiesOnly yes
+#    IdentityFile ~/.ssh/id_rsa
+
+Host ahmjp4
+    Hostname ahm-jumphost24.green.sophos
+    User himanshu.tank
+#    IdentitiesOnly yes
+#    IdentityFile ~/.ssh/id_rsa
+
+Host tadev
+    Hostname ta-dev.qa.astaro.de
+    User htank
+
+Host 3300 
+    Hostname 10.169.19.55
+    User root 
+
+Host pitjp
+    Hostname jump00.c04.pit.els.sophos
+    User himanshutank
+
+Host nemodev-pit
+    Hostname 10.169.16.14
+    User himanshutank 
+
+Host 3300-pitdcs02
+    Hostname debug-console-server-02.c04.pit.els.sophos
+    User testpi1
+
+Host DT1-pitdcs01
+    Hostname debug-console-server-01.c04.pit.els.sophos
+    User testpi1
+
+Host sg430rev1
+    Hostname 10.198.248.55
+    User loginuser
+    ProxyCommand ssh ahmjp1 -W %h:%p
+
+Host xgs3100-ahm
+    Hostname 10.198.248.72
+    User sophos
+    ProxyCommand ssh ahmjp1 -W %h:%p
+
+Host nemodev-ahm
+    Hostname 10.198.248.73
+    User root
+    ProxyCommand ssh ahmjp1 -W %h:%p
+
+Host xgs3100evt2
+    Hostname 10.198.248.217
+    User root
+    ProxyCommand ssh ahmjp1 -W %h:%p
+
+Host xgs3100evt2-dev02
+    Hostname 10.198.248.218
+    User root
+    ProxyCommand ssh ahmjp1 -W %h:%p
+
+Host ahm-console
+    Hostname 10.198.248.153
+    User admin
+    ProxyCommand ssh ahmjp1 -W %h:%p
+
+Host xgs2300-dvt00
+    Hostname 10.198.248.184
+    User root
+    ProxyCommand ssh ahmjp1 -W %h:%p
