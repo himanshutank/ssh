@@ -6,3 +6,30 @@ Host efgh
     Hostname <IP>
     User username
     ProxyCommand ssh jumphost -W %h:%p
+
+# OR below method can be used to achieve the jump. ProxyCommand vs ProxyJump, both does the job done.
+# 
+# Host efgh
+#     Hostname <IP>
+#     User username
+#     ProxyJump jumphost
+
+
+# Tips
+#
+# 1. VIM over SSH.
+# 
+# 	vim scp://<host_name>//tmp/sample.txt
+# 
+# 	This feature of VIM is called netwr. 
+# 	" You can use VIM over SSH. This is called netrw of VIM. 
+# 	" See comment from tagwint user, URL: https://github.com/vim/vim/issues/2329
+# 	autocmd BufRead scp://* :set bt=acwrite
+# 
+# 2. SSH Debugging.
+#	
+#	ssh -vvv OR ssh -G (troubleshooting from Client side)
+#
+# 3. SSH general tip
+#
+#	ssh xgs2300-dvt00 tar c /tmp/ | tar x
