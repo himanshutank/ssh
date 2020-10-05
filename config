@@ -1,3 +1,9 @@
+Host *                                                                                                                                                 
+    ServerAliveInterval 240 
+    ControlMaster auto
+    ControlPath ~/.ssh/.connections/%r@%n:%p
+    ControlPersist 600 
+
 Host abcd
     Hostname <IP>
     User username
